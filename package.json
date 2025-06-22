@@ -34,20 +34,20 @@
     "multi-tenant",
     "observability"
   ],
-      "scripts": {
-        "build": "tsc",
-        "test": "jest",
-        "dev": "ts-node src/index.ts",
-        "lint": "eslint src/**/*.ts",
-        "format": "prettier --write src/**/*.ts",
-        "prepublishOnly": "npm run build",
-        "example:basic": "ts-node examples/01-basic-webhook.ts",
-        "example:multi": "ts-node examples/02-multiple-adapters.ts",
-        "example:logging": "ts-node examples/03-structured-logging.ts",
-        "example:cli": "ts-node examples/04-cli-tools.ts",
-        "example:ecommerce": "ts-node examples/05-ecommerce-platform.ts",
-        "examples:all": "echo 'Run examples on different ports:' && echo '  npm run example:basic (port 3000)' && echo '  npm run example:multi (port 3001)' && echo '  npm run example:logging (port 3002)' && echo '  npm run example:ecommerce (port 3003)' && echo '  npm run example:cli (CLI demo)'"
-    },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "prepublishOnly": "npm run build",
+    "example:basic": "ts-node examples/01-basic-webhook.ts",
+    "example:multi": "ts-node examples/02-multiple-adapters.ts",
+    "example:logging": "ts-node examples/03-structured-logging.ts",
+    "example:cli": "ts-node examples/04-cli-tools.ts",
+    "example:ecommerce": "ts-node examples/05-ecommerce-platform.ts",
+    "examples:all": "echo 'Run examples on different ports:' && echo '  npm run example:basic (port 3000)' && echo '  npm run example:multi (port 3001)' && echo '  npm run example:logging (port 3002)' && echo '  npm run example:ecommerce (port 3003)' && echo '  npm run example:cli (CLI demo)'"
+  },
   "bin": {
     "hook-engine": "./bin/hook-engine"
   },
@@ -56,7 +56,7 @@
     "commander": "^14.0.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "node-fetch": "^3.3.2",
+    "node-fetch": "3.2.10",
     "uuid": "^11.1.0"
   },
   "files": [
